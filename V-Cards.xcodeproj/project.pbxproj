@@ -21,6 +21,13 @@
 		022761E517F62EC700688BBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761C717F62EC600688BBE /* UIKit.framework */; };
 		022761ED17F62EC700688BBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 022761EB17F62EC700688BBE /* InfoPlist.strings */; };
 		022761EF17F62EC700688BBE /* V_CardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761EE17F62EC700688BBE /* V_CardsTests.m */; };
+		022761FB17F630C400688BBE /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 022761F817F630C400688BBE /* About.html */; };
+		022761FC17F630C400688BBE /* Khmer.png in Resources */ = {isa = PBXBuildFile; fileRef = 022761F917F630C400688BBE /* Khmer.png */; };
+		022761FD17F630C400688BBE /* Languages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 022761FA17F630C400688BBE /* Languages.xml */; };
+		0227620617F630F500688BBE /* VCardsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761FF17F630F500688BBE /* VCardsAboutViewController.m */; };
+		0227620717F630F500688BBE /* VCardsLanguageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227620117F630F500688BBE /* VCardsLanguageTableViewController.m */; };
+		0227620817F630F500688BBE /* VCardsLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227620317F630F500688BBE /* VCardsLanguageViewController.m */; };
+		0227620917F630F500688BBE /* VCardsXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227620517F630F500688BBE /* VCardsXmlParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,17 @@
 		022761EA17F62EC700688BBE /* V-CardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "V-CardsTests-Info.plist"; sourceTree = "<group>"; };
 		022761EC17F62EC700688BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		022761EE17F62EC700688BBE /* V_CardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V_CardsTests.m; sourceTree = "<group>"; };
+		022761F817F630C400688BBE /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
+		022761F917F630C400688BBE /* Khmer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Khmer.png; sourceTree = "<group>"; };
+		022761FA17F630C400688BBE /* Languages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Languages.xml; sourceTree = "<group>"; };
+		022761FE17F630F500688BBE /* VCardsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsAboutViewController.h; sourceTree = "<group>"; };
+		022761FF17F630F500688BBE /* VCardsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsAboutViewController.m; sourceTree = "<group>"; };
+		0227620017F630F500688BBE /* VCardsLanguageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsLanguageTableViewController.h; sourceTree = "<group>"; };
+		0227620117F630F500688BBE /* VCardsLanguageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsLanguageTableViewController.m; sourceTree = "<group>"; };
+		0227620217F630F500688BBE /* VCardsLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsLanguageViewController.h; sourceTree = "<group>"; };
+		0227620317F630F500688BBE /* VCardsLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsLanguageViewController.m; sourceTree = "<group>"; };
+		0227620417F630F500688BBE /* VCardsXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsXmlParser.h; sourceTree = "<group>"; };
+		0227620517F630F500688BBE /* VCardsXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsXmlParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +130,17 @@
 		022761C917F62EC600688BBE /* V-Cards */ = {
 			isa = PBXGroup;
 			children = (
+				022761FE17F630F500688BBE /* VCardsAboutViewController.h */,
+				022761FF17F630F500688BBE /* VCardsAboutViewController.m */,
+				0227620017F630F500688BBE /* VCardsLanguageTableViewController.h */,
+				0227620117F630F500688BBE /* VCardsLanguageTableViewController.m */,
+				0227620217F630F500688BBE /* VCardsLanguageViewController.h */,
+				0227620317F630F500688BBE /* VCardsLanguageViewController.m */,
+				0227620417F630F500688BBE /* VCardsXmlParser.h */,
+				0227620517F630F500688BBE /* VCardsXmlParser.m */,
+				022761F817F630C400688BBE /* About.html */,
+				022761F917F630C400688BBE /* Khmer.png */,
+				022761FA17F630C400688BBE /* Languages.xml */,
 				022761D217F62EC600688BBE /* VCardsAppDelegate.h */,
 				022761D317F62EC600688BBE /* VCardsAppDelegate.m */,
 				022761D517F62EC600688BBE /* Main.storyboard */,
@@ -229,9 +258,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022761FB17F630C400688BBE /* About.html in Resources */,
 				022761DC17F62EC600688BBE /* Images.xcassets in Resources */,
 				022761CE17F62EC600688BBE /* InfoPlist.strings in Resources */,
+				022761FD17F630C400688BBE /* Languages.xml in Resources */,
 				022761D717F62EC600688BBE /* Main.storyboard in Resources */,
+				022761FC17F630C400688BBE /* Khmer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +285,10 @@
 				022761D017F62EC600688BBE /* main.m in Sources */,
 				022761DA17F62EC600688BBE /* VCardsViewController.m in Sources */,
 				022761D417F62EC600688BBE /* VCardsAppDelegate.m in Sources */,
+				0227620717F630F500688BBE /* VCardsLanguageTableViewController.m in Sources */,
+				0227620617F630F500688BBE /* VCardsAboutViewController.m in Sources */,
+				0227620817F630F500688BBE /* VCardsLanguageViewController.m in Sources */,
+				0227620917F630F500688BBE /* VCardsXmlParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
