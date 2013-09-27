@@ -66,6 +66,8 @@
     
     BOOL found;
     
+    // test comment for git stuff
+    
     // Loop through the languages and create our keys
     for (id currentLanguage in self.languages)
     {
