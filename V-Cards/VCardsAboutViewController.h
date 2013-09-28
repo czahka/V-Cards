@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VCardsAboutViewController : UIViewController
+@interface VCardsAboutViewController : UIViewController<UIWebViewDelegate>
 
 @end

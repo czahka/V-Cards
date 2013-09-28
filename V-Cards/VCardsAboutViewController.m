@@ -42,7 +42,17 @@
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     //self.aboutWebView.scalesPageToFit = YES;
     [self.aboutWebView loadHTMLString:htmlString baseURL:nil];
+    self.aboutWebView.delegate = self;
+}
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
+    if(navigationType==UIWebViewNavigationTypeLinkClicked)
+    {
+        [[UIApplication sharedApplication] openURL:[request URL]];
+        return NO;
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
