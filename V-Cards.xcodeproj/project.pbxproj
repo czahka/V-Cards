@@ -229,6 +229,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Christopher Zahka";
 				TargetAttributes = {
+					022761BF17F62EC600688BBE = {
+						DevelopmentTeam = BXBG5UK2ZR;
+					};
 					022761E017F62EC700688BBE = {
 						TestTargetID = 022761BF17F62EC600688BBE;
 					};
@@ -415,10 +418,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "V-Cards/V-Cards-Prefix.pch";
 				INFOPLIST_FILE = "V-Cards/V-Cards-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,10 +434,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "V-Cards/V-Cards-Prefix.pch";
 				INFOPLIST_FILE = "V-Cards/V-Cards-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -497,6 +506,7 @@
 				022761F417F62EC700688BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		022761F517F62EC700688BBE /* Build configuration list for PBXNativeTarget "V-CardsTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +515,7 @@
 				022761F717F62EC700688BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
