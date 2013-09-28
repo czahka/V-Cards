@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Cards Language Table View Controller - Languages-->
+        <!--Cards Language Table View Controller - V-Cards-->
         <scene sceneID="yuI-kc-GJd">
             <objects>
                 <tableViewController id="kr4-sY-fyf" customClass="VCardsLanguageTableViewController" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="kr4-sY-fyf" id="GDL-YH-MdE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Languages" id="DFw-AO-4Rp">
+                    <navigationItem key="navigationItem" title="V-Cards" id="DFw-AO-4Rp">
                         <barButtonItem key="rightBarButtonItem" title="About" id="Tgh-gv-hw8">
                             <connections>
                                 <segue destination="mFz-8i-dVQ" kind="push" id="xkZ-zD-hwk"/>
@@ -62,19 +62,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-Pl-k56">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-ce-7Sh">
+                                <rect key="frame" x="0.0" y="64" width="327" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-Pl-k56">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-ce-7Sh">
-                                <rect key="frame" x="0.0" y="-7" width="327" height="575"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VCardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0Iu-CS-uoh">
+                                <rect key="frame" x="40" y="469" width="240" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QMt-ce-7Sh" firstAttribute="leading" secondItem="lpT-Pl-k56" secondAttribute="leading" id="2i9-0h-koL"/>
+                            <constraint firstItem="0Iu-CS-uoh" firstAttribute="centerX" secondItem="LRa-Zr-qIa" secondAttribute="centerX" id="68Y-Jv-GCq"/>
+                            <constraint firstAttribute="trailing" secondItem="QMt-ce-7Sh" secondAttribute="trailing" constant="-7" id="8WD-QF-xxF"/>
+                            <constraint firstAttribute="bottom" secondItem="0Iu-CS-uoh" secondAttribute="bottom" constant="20" symbolic="YES" id="992-MQ-WMB"/>
+                            <constraint firstItem="lpT-Pl-k56" firstAttribute="leading" secondItem="LRa-Zr-qIa" secondAttribute="leading" id="Ail-u6-WcQ"/>
+                            <constraint firstItem="udL-2O-fZ4" firstAttribute="top" secondItem="QMt-ce-7Sh" secondAttribute="bottom" constant="88" id="Oik-ZG-2jK"/>
+                            <constraint firstItem="0Iu-CS-uoh" firstAttribute="leading" secondItem="LRa-Zr-qIa" secondAttribute="leading" constant="40" id="QTv-uh-mN5"/>
+                            <constraint firstItem="lpT-Pl-k56" firstAttribute="top" secondItem="B79-MO-hqt" secondAttribute="bottom" id="QpZ-cI-URL"/>
+                            <constraint firstItem="QMt-ce-7Sh" firstAttribute="top" secondItem="lpT-Pl-k56" secondAttribute="top" id="U9f-8H-Av0"/>
+                            <constraint firstItem="lpT-Pl-k56" firstAttribute="centerX" secondItem="0Iu-CS-uoh" secondAttribute="centerX" id="c6U-IQ-UNR"/>
+                            <constraint firstAttribute="bottom" secondItem="lpT-Pl-k56" secondAttribute="bottom" id="msC-7f-EHH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fb2-SY-jtt"/>
                     <connections>
@@ -134,6 +151,9 @@
             <point key="canvasLocation" x="-450" y="-707"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VCardsBackground" width="226" height="79"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
