@@ -74,7 +74,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VCardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0Iu-CS-uoh">
-                                <rect key="frame" x="40" y="469" width="240" height="79"/>
+                                <rect key="frame" x="40" y="473" width="240" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -115,13 +115,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5wT-KS-ovl">
+                            <webView contentMode="scaleToFill" paginationMode="leftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="5wT-KS-ovl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VCardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cM0-FQ-1xi">
+                                <rect key="frame" x="0.0" y="473" width="320" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cM0-FQ-1xi" secondAttribute="trailing" id="8Bk-qb-UIr"/>
+                            <constraint firstItem="cM0-FQ-1xi" firstAttribute="leading" secondItem="q3D-2C-Mvy" secondAttribute="leading" id="Fue-kf-O1D"/>
+                            <constraint firstItem="JO0-Ie-W7p" firstAttribute="top" secondItem="cM0-FQ-1xi" secondAttribute="bottom" constant="20" id="MsD-1w-JFY"/>
+                            <constraint firstAttribute="bottom" secondItem="5wT-KS-ovl" secondAttribute="bottom" id="WjR-Lb-gvx"/>
+                            <constraint firstAttribute="trailing" secondItem="5wT-KS-ovl" secondAttribute="trailing" id="aBW-iC-Hpq"/>
+                            <constraint firstItem="5wT-KS-ovl" firstAttribute="top" secondItem="q3D-2C-Mvy" secondAttribute="top" id="eMw-QB-Tcq"/>
+                            <constraint firstItem="5wT-KS-ovl" firstAttribute="leading" secondItem="q3D-2C-Mvy" secondAttribute="leading" id="idQ-uA-HWJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="mWl-f1-EFD"/>
                     <connections>
@@ -152,7 +165,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="VCardsBackground" width="226" height="79"/>
+        <image name="VCardsBackground" width="213" height="75"/>
+        <image name="VCardsBackground" width="213" height="75"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
