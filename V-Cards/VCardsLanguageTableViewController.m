@@ -8,6 +8,7 @@
 
 #import "VCardsLanguageTableViewController.h"
 #import "VCardsXmlParser.h"
+#import "VCardsAppDelegate.h"
 
 @interface VCardsLanguageTableViewController ()
 
@@ -40,6 +41,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+
     }
     return self;
 }
@@ -102,7 +104,7 @@
     }
     
     [self.tableView reloadData];
-    
+
     
     
 }
@@ -116,8 +118,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    [self.navigationItem setTitleView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"VCards"]]];
+//    self.tableView.sectionIndexBackgroundColor = GREEN_COLOR;
+//    self.tableView.sectionIndexTrackingBackgroundColor = [UIColor redColor];
     [self populateLanguagesAndSections];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    // deselect row when returning to view
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
 
 }
 

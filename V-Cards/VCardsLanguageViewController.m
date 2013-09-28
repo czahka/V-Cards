@@ -35,6 +35,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction  target:self action:@selector(shareText)];
 }
 
 - (void)setLanguageText
@@ -51,7 +53,7 @@
         self.languageTextView.text = [self.vCardsXmlParser getTranslation:self.languageSelected];
     
         self.languageTextView.textAlignment = NSTextAlignmentCenter;
-        [self.languageTextView setFont:[UIFont systemFontOfSize:18]];
+        [self.languageTextView setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]]; // use iOS 7 accessibility for fonts
     }
 }
 
@@ -73,6 +75,30 @@
     }
     
     [self setLanguageText];
+}
+
+- (void)shareText
+{
+    NSMutableArray *sharingItems = [NSMutableArray new];
+    NSString* string =  self.languageTextView.text;
+    if ([string length] > 0)
+    {
+        [sharingItems addObject:string];
+    }
+    else {
+        if(self.imageView.image != nil)
+        {
+            [sharingItems addObject:self.imageView.image];
+        }
+        else
+        {
+            return;
+        }
+
+    }
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:sharingItems applicationActivities:nil];
+    [self presentViewController:activityController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

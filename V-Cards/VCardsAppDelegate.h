@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#define GREEN_COLOR [UIColor colorWithRed:32.0f/255.0f green:196.0f/255.0f blue:0 alpha:1.0]
+
 
 @interface VCardsAppDelegate : UIResponder <UIApplicationDelegate>
 
