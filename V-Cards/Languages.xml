@@ -131,6 +131,22 @@
         </text>
     </language>
     <language>
+        <name>Bosnian</name>
+        <text>
+            JA SAM VEGAN
+            
+            Biljnih namirnica jedino molim!
+            NEMA MESA
+            Ne sisara, ptica, riba, morski plodovi, insekata, sos, bujon ...
+            NO JAJE
+            Nema bijelaca, bjelance, žumance ...
+            NEMA MLIJEČNIH
+            Ne mlijeko, sir, jogurt, surutka, kazein, laktoza ...
+            NEMA ŽIVOTINJSKIH PROIZVODA
+            Nema meda, želatin, mast, ulje, krv, kosti, masti ...
+        </text>
+    </language>
+    <language>
         <name>Bulgarian</name>
         <text>
             АЗ СЪМ ВЕГАН
@@ -166,6 +182,24 @@
             No hi ha llet, formatge, iogurt, sèrum de llet, caseïna, lactosa ...
             SENSE PRODUCTES D'ORIGEN ANIMAL
             No la mel, gelatina, mantega, oli, sang, os, greix ...
+        </text>
+    </language>
+    <language>
+        <name>Cebuano</name>
+        <text>
+            AKO MAO VEGAN
+            
+            Tanom nga pagkaon lamang please!
+            WALAY BISAN UNSA NGA KALAN-ON
+            Walay mga mammal, langgam, isda,
+            seafood, insekto, salsahan, sabaw ...
+            WALAY BISAN UNSA NGA ITLOG
+            Walay mga puti, albumen, yolk ...
+            WALAY BISAN UNSA NGA DAIRY
+            Nga walay gatas, keso, yogurt, whey, casein, lactose ...
+            NGA WALAY MGA MANANAP NGA MGA PRODUKTO
+            Walay bisan unsa nga dugos, gelatin, 
+            lard, sa lana, sa dugo, bukog, tambok ...
         </text>
     </language>
     <language>
@@ -490,6 +524,24 @@
         </text>
     </language>
     <language>
+        <name>Hmong</name>
+        <text>
+            KUV YOG NEEG TSIS NOJ NQAIJ
+            
+            Nroj cov khoom noj uas tsuas thov!
+            TSIS MUAJ NQAIJ
+            Tsis muaj mammal, noog, ntses,
+            nqaij hav dej, kab, sauce, broth ...
+            TSIS MUAJ QE
+            Tsis dawb, albumen, yolk ...
+            TSIS MUAJ CHAW YUJ NYUJ
+            Tsis muaj mis nyuj, cheese, yogurt, whey, casein, lactose ...
+            TSIS MUAJ TSIAJ COV KHOOM
+            Tsis muaj zib mu, gelatin, lard, roj, 
+            ntshav, cov pob txha, muaj roj ...
+        </text>
+    </language>
+    <language>
         <name>Hungarian</name>
         <text>
             ÉN VEGÁN
@@ -583,6 +635,23 @@
             は牛乳、チーズない、ヨーグルト、乳清、カゼイン、乳糖...
             何の動物製品なし
             蜂蜜がない、ゼラチン、ラード、油、血液、骨、脂肪...
+        </text>
+    </language>
+    <language>
+        <name>Javanese</name>
+        <text>
+            AKU VEGAN
+            
+            Tetanduran panganan mung please!
+            ORA MEAT
+            Ora mammal, manuk, iwak, panganan laut,
+            serangga, sauce, duduh kaldu ...
+            ORA ENDHOG
+            Ora tiyang kuilt pethak, albumen, yolk ...
+            ORA BIASA
+            Ora susu, keju, yogurt, whey, casein, lactose ...
+            ORA PRODUK KEWAN
+            Ora madu, gelatin, lard, lenga, getih, balung, lemak ...
         </text>
     </language>
     <language>
@@ -727,6 +796,22 @@
             Nru tal-ħalib, ġobon, jogurt, xorrox, kaseina, lattosju ...
             EBDA PRODOTTI TAL-ANNIMALI
             Ebda għasel, ġelatina, xaħam, żejt, demm, għadam, xaħam ...
+        </text>
+    </language>
+    <language>
+        <name>Marathi</name>
+        <text>
+            मी प्राण्यापासून तयार झालेले काहीही am
+            
+            वनस्पती अन्न केवळ करा!
+            नाही मांस
+            नाही सस्तन प्राणी, पक्षी, मासे, सीफुड, किटक, सॉस, मटनाचा रस्सा ...
+            नाही अंडे
+            नाही पंचा, अंड्यातील पांढरा बलक, अंड्यातील पिवळ बलक ...
+            नाही दुग्धशाळा
+            नाही दूध, चीज, दही, दह्यातील पाणी (विरजणातील दह्याची निवळी), दुधातील सत्त्वमय, दुग्धशर्करा ...
+            कोणतेही प्राणी उत्पादने
+            मध नाही, सरस, स्वयंपाकात वापरण्याची डुकराची चरबी, तेल, रक्त, अस्थी, चरबी ...
         </text>
     </language>
     <language>
