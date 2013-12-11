@@ -9,6 +9,9 @@
 #import "VCardsLanguageTableViewController.h"
 #import "VCardsXmlParser.h"
 #import "VCardsAppDelegate.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 @interface VCardsLanguageTableViewController ()
 
@@ -122,12 +125,17 @@
 //    self.tableView.sectionIndexBackgroundColor = GREEN_COLOR;
 //    self.tableView.sectionIndexTrackingBackgroundColor = [UIColor redColor];
     [self populateLanguagesAndSections];
-
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     // deselect row when returning to view
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
+
+    
+    id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
+    [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
+                           set:@"Language List" forKey:kGAIScreenName] build]];
 
 }
 
@@ -152,6 +160,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSString * lang = [[self.sections valueForKey:[[[self.sections allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)] objectAtIndex:indexPath.section]] objectAtIndex:indexPath.row];
+    
+    UIFont* font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    
+    //UIColor* textColor = self.view.tintColor;
+    cell.textLabel.font = font;
     
     cell.textLabel.text = lang;
     

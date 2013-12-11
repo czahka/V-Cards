@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #define GREEN_COLOR [UIColor colorWithRed:32.0f/255.0f green:196.0f/255.0f blue:0 alpha:1.0]
 
+#ifndef DEBUG
+#define GOOGLE_TRACKING_ID @"UA-44442599-1"
+#else
+#define GOOGLE_TRACKING_ID @"0000000000" //use nonsense 
+#endif
 
 @interface VCardsAppDelegate : UIResponder <UIApplicationDelegate>
 

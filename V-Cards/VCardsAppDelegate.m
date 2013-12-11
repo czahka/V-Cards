@@ -7,6 +7,7 @@
 //
 
 #import "VCardsAppDelegate.h"
+#import "GAI.h"
 
 @implementation VCardsAppDelegate
 
@@ -20,6 +21,24 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     _window.tintColor = GREEN_COLOR;
+    
+    
+    // Google Analytics
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+#ifdef DEBUG
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+#else
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelNone];
+#endif
+    // Initialize tracker.
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:GOOGLE_TRACKING_ID];
+    
     return YES;
 }
 							

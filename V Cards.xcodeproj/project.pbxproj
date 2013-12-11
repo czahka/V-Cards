@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022761C417F62EC600688BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761C317F62EC600688BBE /* Foundation.framework */; };
+		022761C617F62EC600688BBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761C517F62EC600688BBE /* CoreGraphics.framework */; };
+		022761C817F62EC600688BBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761C717F62EC600688BBE /* UIKit.framework */; };
+		022761CE17F62EC600688BBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 022761CC17F62EC600688BBE /* InfoPlist.strings */; };
+		022761D017F62EC600688BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761CF17F62EC600688BBE /* main.m */; };
+		022761D417F62EC600688BBE /* VCardsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761D317F62EC600688BBE /* VCardsAppDelegate.m */; };
+		022761D717F62EC600688BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022761D517F62EC600688BBE /* Main.storyboard */; };
+		022761DA17F62EC600688BBE /* VCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761D917F62EC600688BBE /* VCardsViewController.m */; };
+		022761DC17F62EC600688BBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022761DB17F62EC600688BBE /* Images.xcassets */; };
+		022761E317F62EC700688BBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761E217F62EC700688BBE /* XCTest.framework */; };
+		022761E417F62EC700688BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761C317F62EC600688BBE /* Foundation.framework */; };
+		022761E517F62EC700688BBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022761C717F62EC600688BBE /* UIKit.framework */; };
+		022761ED17F62EC700688BBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 022761EB17F62EC700688BBE /* InfoPlist.strings */; };
+		022761EF17F62EC700688BBE /* V_CardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761EE17F62EC700688BBE /* V_CardsTests.m */; };
+		022761FB17F630C400688BBE /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 022761F817F630C400688BBE /* About.html */; };
+		022761FC17F630C400688BBE /* Khmer.png in Resources */ = {isa = PBXBuildFile; fileRef = 022761F917F630C400688BBE /* Khmer.png */; };
+		022761FD17F630C400688BBE /* Languages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 022761FA17F630C400688BBE /* Languages.xml */; };
+		0227620617F630F500688BBE /* VCardsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 022761FF17F630F500688BBE /* VCardsAboutViewController.m */; };
+		0227620717F630F500688BBE /* VCardsLanguageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227620117F630F500688BBE /* VCardsLanguageTableViewController.m */; };
+		0227620817F630F500688BBE /* VCardsLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227620317F630F500688BBE /* VCardsLanguageViewController.m */; };
+		0227620917F630F500688BBE /* VCardsXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227620517F630F500688BBE /* VCardsXmlParser.m */; };
+		E6C1AE40180DD7CD006810F0 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C1AE3F180DD7CD006810F0 /* libGoogleAnalyticsServices.a */; };
+		E6E4F33A17F8D49100AC504E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E4F33917F8D49100AC504E /* CoreData.framework */; };
+		E6E4F33C17F8D4A100AC504E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E4F33B17F8D4A100AC504E /* libz.dylib */; };
+		E6E4F33E17F8D4AC00AC504E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E4F33D17F8D4AC00AC504E /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		022761E617F62EC700688BBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 022761B817F62EC600688BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 022761BF17F62EC600688BBE;
+			remoteInfo = "V-Cards";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022761C017F62EC600688BBE /* V-Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "V-Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		022761C317F62EC600688BBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		022761C517F62EC600688BBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		022761C717F62EC600688BBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		022761CB17F62EC600688BBE /* V-Cards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "V-Cards-Info.plist"; sourceTree = "<group>"; };
+		022761CD17F62EC600688BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		022761CF17F62EC600688BBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		022761D117F62EC600688BBE /* V-Cards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V-Cards-Prefix.pch"; sourceTree = "<group>"; };
+		022761D217F62EC600688BBE /* VCardsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCardsAppDelegate.h; sourceTree = "<group>"; };
+		022761D317F62EC600688BBE /* VCardsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCardsAppDelegate.m; sourceTree = "<group>"; };
+		022761D617F62EC600688BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		022761D817F62EC600688BBE /* VCardsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCardsViewController.h; sourceTree = "<group>"; };
+		022761D917F62EC600688BBE /* VCardsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCardsViewController.m; sourceTree = "<group>"; };
+		022761DB17F62EC600688BBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		022761E117F62EC700688BBE /* V-CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "V-CardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		022761E217F62EC700688BBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		022761EA17F62EC700688BBE /* V-CardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "V-CardsTests-Info.plist"; sourceTree = "<group>"; };
+		022761EC17F62EC700688BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		022761EE17F62EC700688BBE /* V_CardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V_CardsTests.m; sourceTree = "<group>"; };
+		022761F817F630C400688BBE /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
+		022761F917F630C400688BBE /* Khmer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Khmer.png; sourceTree = "<group>"; };
+		022761FA17F630C400688BBE /* Languages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Languages.xml; sourceTree = "<group>"; };
+		022761FE17F630F500688BBE /* VCardsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsAboutViewController.h; sourceTree = "<group>"; };
+		022761FF17F630F500688BBE /* VCardsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsAboutViewController.m; sourceTree = "<group>"; };
+		0227620017F630F500688BBE /* VCardsLanguageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsLanguageTableViewController.h; sourceTree = "<group>"; };
+		0227620117F630F500688BBE /* VCardsLanguageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsLanguageTableViewController.m; sourceTree = "<group>"; };
+		0227620217F630F500688BBE /* VCardsLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsLanguageViewController.h; sourceTree = "<group>"; };
+		0227620317F630F500688BBE /* VCardsLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsLanguageViewController.m; sourceTree = "<group>"; };
+		0227620417F630F500688BBE /* VCardsXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCardsXmlParser.h; sourceTree = "<group>"; };
+		0227620517F630F500688BBE /* VCardsXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCardsXmlParser.m; sourceTree = "<group>"; };
+		E6C1AE3F180DD7CD006810F0 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		E6E4F33317F8D45500AC504E /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		E6E4F33417F8D45500AC504E /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		E6E4F33517F8D45500AC504E /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		E6E4F33617F8D45500AC504E /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		E6E4F33717F8D45500AC504E /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		E6E4F33817F8D45500AC504E /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		E6E4F33917F8D49100AC504E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E6E4F33B17F8D4A100AC504E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E6E4F33D17F8D4AC00AC504E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		022761BD17F62EC600688BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E4F33E17F8D4AC00AC504E /* SystemConfiguration.framework in Frameworks */,
+				E6E4F33C17F8D4A100AC504E /* libz.dylib in Frameworks */,
+				E6E4F33A17F8D49100AC504E /* CoreData.framework in Frameworks */,
+				E6C1AE40180DD7CD006810F0 /* libGoogleAnalyticsServices.a in Frameworks */,
+				022761C617F62EC600688BBE /* CoreGraphics.framework in Frameworks */,
+				022761C817F62EC600688BBE /* UIKit.framework in Frameworks */,
+				022761C417F62EC600688BBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022761DE17F62EC700688BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022761E317F62EC700688BBE /* XCTest.framework in Frameworks */,
+				022761E517F62EC700688BBE /* UIKit.framework in Frameworks */,
+				022761E417F62EC700688BBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		022761B717F62EC600688BBE = {
+			isa = PBXGroup;
+			children = (
+				022761C917F62EC600688BBE /* V-Cards */,
+				022761E817F62EC700688BBE /* V-CardsTests */,
+				022761C217F62EC600688BBE /* Frameworks */,
+				022761C117F62EC600688BBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		022761C117F62EC600688BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				022761C017F62EC600688BBE /* V-Cards.app */,
+				022761E117F62EC700688BBE /* V-CardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		022761C217F62EC600688BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E4F33D17F8D4AC00AC504E /* SystemConfiguration.framework */,
+				E6E4F33B17F8D4A100AC504E /* libz.dylib */,
+				E6E4F33917F8D49100AC504E /* CoreData.framework */,
+				022761C317F62EC600688BBE /* Foundation.framework */,
+				022761C517F62EC600688BBE /* CoreGraphics.framework */,
+				022761C717F62EC600688BBE /* UIKit.framework */,
+				022761E217F62EC700688BBE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		022761C917F62EC600688BBE /* V-Cards */ = {
+			isa = PBXGroup;
+			children = (
+				E6E4F33017F8D41000AC504E /* Google Analytics */,
+				022761FE17F630F500688BBE /* VCardsAboutViewController.h */,
+				022761FF17F630F500688BBE /* VCardsAboutViewController.m */,
+				0227620017F630F500688BBE /* VCardsLanguageTableViewController.h */,
+				0227620117F630F500688BBE /* VCardsLanguageTableViewController.m */,
+				0227620217F630F500688BBE /* VCardsLanguageViewController.h */,
+				0227620317F630F500688BBE /* VCardsLanguageViewController.m */,
+				0227620417F630F500688BBE /* VCardsXmlParser.h */,
+				0227620517F630F500688BBE /* VCardsXmlParser.m */,
+				022761F817F630C400688BBE /* About.html */,
+				022761F917F630C400688BBE /* Khmer.png */,
+				022761FA17F630C400688BBE /* Languages.xml */,
+				022761D217F62EC600688BBE /* VCardsAppDelegate.h */,
+				022761D317F62EC600688BBE /* VCardsAppDelegate.m */,
+				022761D517F62EC600688BBE /* Main.storyboard */,
+				022761D817F62EC600688BBE /* VCardsViewController.h */,
+				022761D917F62EC600688BBE /* VCardsViewController.m */,
+				022761DB17F62EC600688BBE /* Images.xcassets */,
+				022761CA17F62EC600688BBE /* Supporting Files */,
+			);
+			path = "V-Cards";
+			sourceTree = "<group>";
+		};
+		022761CA17F62EC600688BBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				022761CB17F62EC600688BBE /* V-Cards-Info.plist */,
+				022761CC17F62EC600688BBE /* InfoPlist.strings */,
+				022761CF17F62EC600688BBE /* main.m */,
+				022761D117F62EC600688BBE /* V-Cards-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		022761E817F62EC700688BBE /* V-CardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				022761EE17F62EC700688BBE /* V_CardsTests.m */,
+				022761E917F62EC700688BBE /* Supporting Files */,
+			);
+			path = "V-CardsTests";
+			sourceTree = "<group>";
+		};
+		022761E917F62EC700688BBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				022761EA17F62EC700688BBE /* V-CardsTests-Info.plist */,
+				022761EB17F62EC700688BBE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6E4F33017F8D41000AC504E /* Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				E6E4F33317F8D45500AC504E /* GAI.h */,
+				E6E4F33417F8D45500AC504E /* GAIDictionaryBuilder.h */,
+				E6E4F33517F8D45500AC504E /* GAIFields.h */,
+				E6E4F33617F8D45500AC504E /* GAILogger.h */,
+				E6E4F33717F8D45500AC504E /* GAITrackedViewController.h */,
+				E6E4F33817F8D45500AC504E /* GAITracker.h */,
+				E6C1AE3F180DD7CD006810F0 /* libGoogleAnalyticsServices.a */,
+			);
+			name = "Google Analytics";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		022761BF17F62EC600688BBE /* V-Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022761F217F62EC700688BBE /* Build configuration list for PBXNativeTarget "V-Cards" */;
+			buildPhases = (
+				022761BC17F62EC600688BBE /* Sources */,
+				022761BD17F62EC600688BBE /* Frameworks */,
+				022761BE17F62EC600688BBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "V-Cards";
+			productName = "V-Cards";
+			productReference = 022761C017F62EC600688BBE /* V-Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		022761E017F62EC700688BBE /* V-CardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 022761F517F62EC700688BBE /* Build configuration list for PBXNativeTarget "V-CardsTests" */;
+			buildPhases = (
+				022761DD17F62EC700688BBE /* Sources */,
+				022761DE17F62EC700688BBE /* Frameworks */,
+				022761DF17F62EC700688BBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				022761E717F62EC700688BBE /* PBXTargetDependency */,
+			);
+			name = "V-CardsTests";
+			productName = "V-CardsTests";
+			productReference = 022761E117F62EC700688BBE /* V-CardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		022761B817F62EC600688BBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VCards;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Christopher Zahka";
+				TargetAttributes = {
+					022761BF17F62EC600688BBE = {
+						DevelopmentTeam = BXBG5UK2ZR;
+					};
+					022761E017F62EC700688BBE = {
+						TestTargetID = 022761BF17F62EC600688BBE;
+					};
+				};
+			};
+			buildConfigurationList = 022761BB17F62EC600688BBE /* Build configuration list for PBXProject "V Cards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 022761B717F62EC600688BBE;
+			productRefGroup = 022761C117F62EC600688BBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				022761BF17F62EC600688BBE /* V-Cards */,
+				022761E017F62EC700688BBE /* V-CardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		022761BE17F62EC600688BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022761FB17F630C400688BBE /* About.html in Resources */,
+				022761DC17F62EC600688BBE /* Images.xcassets in Resources */,
+				022761CE17F62EC600688BBE /* InfoPlist.strings in Resources */,
+				022761FD17F630C400688BBE /* Languages.xml in Resources */,
+				022761D717F62EC600688BBE /* Main.storyboard in Resources */,
+				022761FC17F630C400688BBE /* Khmer.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022761DF17F62EC700688BBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022761ED17F62EC700688BBE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		022761BC17F62EC600688BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022761D017F62EC600688BBE /* main.m in Sources */,
+				022761DA17F62EC600688BBE /* VCardsViewController.m in Sources */,
+				022761D417F62EC600688BBE /* VCardsAppDelegate.m in Sources */,
+				0227620717F630F500688BBE /* VCardsLanguageTableViewController.m in Sources */,
+				0227620617F630F500688BBE /* VCardsAboutViewController.m in Sources */,
+				0227620817F630F500688BBE /* VCardsLanguageViewController.m in Sources */,
+				0227620917F630F500688BBE /* VCardsXmlParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		022761DD17F62EC700688BBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				022761EF17F62EC700688BBE /* V_CardsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		022761E717F62EC700688BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 022761BF17F62EC600688BBE /* V-Cards */;
+			targetProxy = 022761E617F62EC700688BBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		022761CC17F62EC600688BBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022761CD17F62EC600688BBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		022761D517F62EC600688BBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022761D617F62EC600688BBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		022761EB17F62EC700688BBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022761EC17F62EC700688BBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		022761F017F62EC700688BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		022761F117F62EC700688BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		022761F317F62EC700688BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "V-Cards/V-Cards-Prefix.pch";
+				INFOPLIST_FILE = "V-Cards/V-Cards-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bencollier/Dropbox/Version-Control/V-Cards/V-Cards",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		022761F417F62EC700688BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "V-Cards/V-Cards-Prefix.pch";
+				INFOPLIST_FILE = "V-Cards/V-Cards-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/bencollier/Dropbox/Version-Control/V-Cards/V-Cards",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		022761F617F62EC700688BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/V-Cards.app/V-Cards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "V-Cards/V-Cards-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "V-CardsTests/V-CardsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		022761F717F62EC700688BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/V-Cards.app/V-Cards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "V-Cards/V-Cards-Prefix.pch";
+				INFOPLIST_FILE = "V-CardsTests/V-CardsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		022761BB17F62EC600688BBE /* Build configuration list for PBXProject "V Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022761F017F62EC700688BBE /* Debug */,
+				022761F117F62EC700688BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022761F217F62EC700688BBE /* Build configuration list for PBXNativeTarget "V-Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022761F317F62EC700688BBE /* Debug */,
+				022761F417F62EC700688BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		022761F517F62EC700688BBE /* Build configuration list for PBXNativeTarget "V-CardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				022761F617F62EC700688BBE /* Debug */,
+				022761F717F62EC700688BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 022761B817F62EC600688BBE /* Project object */;
+}

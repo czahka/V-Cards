@@ -7,6 +7,10 @@
 //
 
 #import "VCardsAboutViewController.h"
+#import "GAI.h"
+#import "GAIFields.h"
+#import "GAITracker.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface VCardsAboutViewController ()
 
@@ -25,6 +29,13 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
+    [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
+                           set:@"About" forKey:kGAIScreenName] build]];
 }
 
 - (void)viewDidLoad

@@ -8,6 +8,9 @@
 
 #import "VCardsLanguageViewController.h"
 #import "VCardsXmlParser.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 @interface VCardsLanguageViewController ()
 
@@ -37,6 +40,7 @@
 	// Do any additional setup after loading the view.
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction  target:self action:@selector(shareText)];
+    _languageTextView.layoutManager.delegate = self;
 }
 
 - (void)setLanguageText
@@ -50,10 +54,14 @@
     }
     else
     {
-        self.languageTextView.text = [self.vCardsXmlParser getTranslation:self.languageSelected];
-    
+        
+        NSString *text = [self.vCardsXmlParser getTranslation:self.languageSelected];
+        
+        
+
+        self.languageTextView.text = text;
+
         self.languageTextView.textAlignment = NSTextAlignmentCenter;
-        [self.languageTextView setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]]; // use iOS 7 accessibility for fonts
     }
 }
 
@@ -75,6 +83,13 @@
     }
     
     [self setLanguageText];
+    
+    NSString *page = [@"Lang: " stringByAppendingString:self.languageSelected];
+    
+    id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
+    [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
+                           set:page forKey:kGAIScreenName] build]];
+
 }
 
 - (void)shareText
@@ -113,6 +128,13 @@
     self.title = self.languageSelected;
 }
 
+#pragma -
+#pragma NSLayoutManagerDelegate
+
+- (CGFloat)layoutManager:(NSLayoutManager *)layoutManager lineSpacingAfterGlyphAtIndex:(NSUInteger)glyphIndex withProposedLineFragmentRect:(CGRect)rect
+{
+    return 5;
+}
 
 
 @end
